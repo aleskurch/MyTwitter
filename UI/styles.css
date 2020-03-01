@@ -1,10 +1,8 @@
-
 body{
 font-size: 40px;
 min-width: 320px;
 min-height: 500px;
 }
-
 header{
     position:absolute;
     top:0;
@@ -56,7 +54,6 @@ header .line{
     width: 100px;
     height: 3px;
     left: 50%;
-
 }
 header > .button1{
     font-size: 2rem;
@@ -98,9 +95,7 @@ footer .textFooter{
     text-align: right;
     right: 1%;
     top: 25%;
-    
 }
-
 .menu{
     position:absolute;
     bottom: 0;
@@ -274,7 +269,6 @@ main > .newPost > .tegHelp > .selectedTeg{
     border: none;
     border-radius: 5px;
     background-color: unset;
-
 }
 main > .newPost > .tegHelp > .selectedTeg:focus{outline:0}
 main > .newPost > .tegHelp > .selectedTeg:active { color: rgba(0, 0, 0, 0.56);}
@@ -288,7 +282,6 @@ main > .newPost > .photoAddButton{
     background-color: unset;
     border-radius: 8px;
     border: none;
-    
 }
 main > .newPost > .photoAddButton img{
     position:absolute;
@@ -335,7 +328,6 @@ main > .post > .photo{
     display: inline-block;
     margin-bottom: 20px;
     width: calc(100% - 40px) ;
-
 }
 main > .post > .name{
     position: absolute;
@@ -368,7 +360,6 @@ main > .post > .like{
     border: none;
 }
 main > .post > .like:focus{outline:0}
-
 main > .post > .more{
     position:absolute;
     right: 2px;
@@ -378,7 +369,6 @@ main > .post > .more{
     background-color: unset;
     border-radius: 5px;
     border: none;
-    
 }
 main > .post > .more img{
     position:absolute;
@@ -414,16 +404,13 @@ main > .seeMore{
 main > .seeMore:focus{outline:0}
 main > .seeMore:active { background-color: rgb(245, 245, 245); }
 @media (max-width: 900px) {
-
     .menu {
         display: none;
-
     }
     footer {
         display: none;
         width: 0px;
         height: 0px;
-
     }
     header{
         width: 100%;
