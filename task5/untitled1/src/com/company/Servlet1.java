@@ -10,7 +10,7 @@ import java.io.IOException;
 public class Servlet1 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        response.getWriter().write("Application Is Running");
+        response.getWriter().write("<p style='color:red'>Application Is Running</p>");
     }
 }
 
