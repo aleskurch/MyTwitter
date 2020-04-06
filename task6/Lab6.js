@@ -247,31 +247,19 @@ let posts = [
 ];
 let module = (function () {
     function checkValid(post) {
-        if (typeof post.id !== 'string') {
-            console.log("Problem with id");
-            return false
-        }
         if (typeof post.description !== 'string' || post.description.length >= 200) {
             console.log("Problem with description");
             return false
         }
-        if (Object.prototype.toString.call(post.createdAt) !== '[object Date]') {
-            console.log("Problem with date");
-            return false
-        }
-        if (typeof post.author !== 'string' || post.author.length <= 0) {
-            console.log("Problem with author");
-            return false
-        }
         if (typeof post.photoLink !== 'string' && post.photoLink !== undefined) {
-            console.log("Problem with author");
+            console.log("Problem with PhotoLink");
             return false
         }
-        if(!Array.isArray(post.hashTags)&& post.hashTags !== undefined){
+        if (!Array.isArray(post.hashTags) && post.hashTags !== undefined) {
             console.log("Problem with tags");
             return false
         }
-        if(!Array.isArray(post.likes)&& post.likes !== undefined){
+        if (!Array.isArray(post.likes) && post.likes !== undefined) {
             console.log("Problem with likers");
             return false
         }
@@ -279,15 +267,19 @@ let module = (function () {
     }
 
     function addPost(post) {
-        if(!module.checkValid(post)|| posts.find(value => value.id === post.id) !== undefined){
+        if (!module.checkValid(post) || posts.find(value => value.id === post.id) !== undefined) {
             return false;
         }
+        post.createdAt = new Date('2020-03-17T23:00:00');
+        post.id = post.createdAt.toString();
+        post.author = "Me";
         posts.push(post);
         return true
     }
+
     function editPost(id, post) {
         let postToEdit = module.getPost(id);
-        if(!postToEdit){
+        if (!postToEdit) {
             return false;
         }
         Object.keys(post).forEach(field => postToEdit[field] = post[field]);
@@ -295,6 +287,7 @@ let module = (function () {
             return false;
         return true;
     }
+
     function getPost(id) {
         return posts.find(value => value.id === id)
     }
@@ -303,14 +296,33 @@ let module = (function () {
         posts = posts.filter(value => value.id !== id);
         return true
     }
+
     function getPosts(skip, top, filterConfig) {
-            if(filterConfig != null) {
-                return posts.filter(p => (filterConfig.author == null || p.author === filterConfig.author) &&
-                    (filterConfig.tags == null || filterConfig.tags.filter(tag => p.hashTags.includes(tag)).length === filterConfig.tags.length))
-                    .slice(skip, skip + top).sort(a => a.createdAt);
+        if (filterConfig !== null) {
+            if (filterConfig.author == null) {
+                if (filterConfig.tags == null)
+                    return posts.filter(p => (filterConfig.author == null) && (filterConfig.tags == null))
+                        .sort(a => a.createdAt).slice(skip, skip + top);
+                else {
+                    return posts.filter(p => (filterConfig.author == null) &&
+                        (filterConfig.tags.filter(tag => p.hashTags.includes(tag)).length === filterConfig.tags.length))
+                        .sort(a => a.createdAt).slice(skip, skip + top);
+                }
             }
-            return posts.slice(skip, skip + top).sort(a => a.createdAt);
+            else {
+                if (filterConfig.tags == null)
+                    return posts.filter(p => (p.author === filterConfig.author) && (filterConfig.tags == null))
+                        .sort(a => a.createdAt).slice(skip, skip + top);
+                else {
+                    return posts.filter(p => (p.author === filterConfig.author) &&
+                        (filterConfig.tags.filter(tag => p.hashTags.includes(tag)).length === filterConfig.tags.length))
+                        .sort(a => a.createdAt).slice(skip, skip + top);
+                }
+            }
+        }
+        return posts.slice(skip, skip + top).sort(a => a.createdAt);
     }
+
     return {
         getPost: getPost,
         removePost: removePost,
@@ -325,10 +337,12 @@ console.log(module.removePost('5'));
 console.log(module.editPost('3', {description: 'edited description'}));
 console.log(module.getPost('3'));
 console.log(module.checkValid(module.getPost('3')));
-console.log(module.addPost({id: '1221',
+console.log(module.addPost({
+    id: '1221',
     description: 'text for 2',
     createdAt: new Date('2020-03-17T23:00:00'),
     author: 'Snow',
-    photoLink: 'https://www.pressball.by/images/stories/2020/03/20200310231542.jpg'}));
+    photoLink: 'https://www.pressball.by/images/stories/2020/03/20200310231542.jpg'
+}));
 console.log(module.addPost(module.getPost('7')));
 
