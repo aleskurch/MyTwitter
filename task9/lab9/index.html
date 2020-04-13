@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/603dc29320.js" crossorigin="anonymous"></script>
+    <script src="Lab7.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="1.png" alt="DINO">
+        <img class="userHead" src="userPhoto.png" alt="userPhoto">
+        <div class="username">Ales Kurch</div>
+        <button class="menuButton">Menu
+            <div class="line"></div>
+        </button>
+        <button class="button1">log in</button>
+        <button class="button2">log out</button>
+
+    </header>
+
+    <footer>
+        <div class="textFooter">
+            Elasmo by Alexey Kurch. 2 course 6 group
+            <br />e-mail: alexkurch100@gmai.com
+            <br />update: 29.02.2020
+        </div>
+    </footer>
+    <div class="menu">
+        <img src="userPhoto.png" alt="userPhoto">
+        <div class="nickname">T-Rexh</div>
+        <div class="filterfild">Name:
+            <textarea class="text" placeholder="T-Rexh"></textarea>
+        </div>
+        <div class="filterfild">Teg:
+            <textarea class="text" placeholder="#teg"></textarea>
+        </div>
+        <div class="filterfild">Date:
+            <div class="fromTo">
+                <input class="data" type="date" value="2001-09-10">&nbsp;:from
+                <input class="data" type="date" value="2001-09-10">&nbsp;:to
+            </div>
+        </div>
+        <button class="apply">Apply</button>
+    </div>
+    <main>
+        <div class="newPost">
+            <img class="user" src="userPhoto.png" alt="userPhoto">
+            <textarea class="teg" placeholder="Type your teg"></textarea>
+            <div class="tegHelp">
+                <button class="selectedTeg">#elasmo_top</button>
+                <button class="selectedTeg">#hello</button>
+                <button class="selectedTeg">#Grrr</button>
+                <button class="selectedTeg">#girls_are_girls</button>
+            </div>
+            <textarea class="text" placeholder="Type your JurAction"></textarea>
+            <button class="photoAddButton">
+                <img class="user" src="photoAdd.png" alt="userPhoto" style="vertical-align:mclassdle">
+            </button>
+            <button class="grUp">Grrrr Up</button>
+        </div>
+        <div class="posts" id="container">
+            <template id="template">
+                <div class="post" id="">
+                    <div class="name" data-target="author"></div>
+                    <div class="teg" data-target="hashTags"></div>
+                    <div class="text" data-target="description"></div>
+                    <div class="time" data-target="createdAt"></div>
+                    <button class="more">
+                        <img src="dots.png" alt="dots" style="vertical-align:mclassdle">
+                    </button>
+                    <button class="like">grrrr it!</button>
+                </div>
+            </template>
+            <button class="seeMore">See More</button>
+        </div>
+    </main>
+</body>
+
+</html>
