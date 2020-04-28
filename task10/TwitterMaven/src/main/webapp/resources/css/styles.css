@@ -1,0 +1,589 @@
+body{
+font-size: 40px;
+min-width: 320px;
+min-height: 500px;
+}
+header{
+    position:absolute;
+    top:0;
+    left: 205px;
+    width: calc(100% - 205px);
+    height: 100px;
+    background: #86CCDB ;
+}
+.logInForm{
+    position:absolute;
+    visibility: hidden;
+    background: #86CCDB;
+    height: 120px;
+    width: 300px;
+    left: 45%;
+    top: 20%;
+    border-radius: 12px;
+    z-index: 2;
+}
+.logInFormText{
+    position: absolute;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.5rem;
+    margin: 5px;
+    margin-top: 30px;
+    width: calc(100% - 20px);
+}
+.logInFormText:focus{outline:0}
+.logInFormOk{
+    position:absolute;
+    bottom: 10px;
+    left: 10px;
+    font-family: Amatic SC;
+    font-size: 1rem;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+}
+.logInFormOk:focus{outline:0}
+.logInFormOk:active { background-color: rgb(245, 245, 245); }
+.logInFormCancel{
+    position:absolute;
+    bottom: 10px;
+    right: 10px;
+    font-family: Amatic SC;
+    font-size: 1rem;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+}
+.logInFormCancel:focus{outline:0}
+.logInFormCancel:active { background-color: rgb(245, 245, 245); }
+.shade{
+    position:absolute;
+    visibility: hidden;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(171,171,171,0.63);
+}
+header .logo{
+    position:absolute;
+    left: 10px;
+    width: 100px;
+    height: 100%;
+}
+header .menuButton{
+    display: none;
+    position: absolute;
+    padding: 0px;
+    background-color: unset;
+    border: none;
+    left: calc(50% - 50px);
+    bottom: 5px;
+    font-size: 1.5rem;
+    color: white;
+    font-family: Amatic SC;
+}
+header > .userHead{
+    display: none;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 15px;
+}
+header > .username{
+    display: none;
+    position: absolute;
+    width: auto;
+    height: 30px;
+    right: 5px;
+    top: 45px;
+    font-family: Amatic SC;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+}
+header .menuButton:focus{outline:0}
+header .line{
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 3px;
+    left: 50%;
+    border-radius: 50px;
+}
+.button1{
+    font-size: 2rem;
+    position:absolute;
+    right: 5px;
+    top: 30%;
+    font-family: Amatic SC;
+    color: white;
+    background-color: unset;
+    border: none;
+}
+.button1:focus{outline:0}
+.button1:active { color: rgb(224, 224, 224); }
+.button2{
+    font-size: 2rem;
+    position:absolute;
+    right: 85px;
+    top: 30%;
+    font-family: Amatic SC;
+    color: white;
+    background-color: unset;
+    border: none;
+}
+.button2:focus{outline:0}
+.button2:active { color: rgb(224, 224, 224); }
+
+footer{
+    position:absolute;
+    bottom: 0;
+    left: 205px;
+    margin-top: 5px;
+    width: calc(100% - 205px);
+    height: 50px;
+    background: #86CCDB ;
+}
+footer .textFooter{
+    position:absolute;
+    font-size: 0.6rem;
+    text-align: right;
+    right: 1%;
+    top: 25%;
+}
+.menu{
+    position:absolute;
+    bottom: 0;
+    left:0;
+    width: 200px;
+    height: 100%;
+    background: #B0B413 ;
+}
+.menu img{
+    position:relative;
+    margin-top: 10px;
+    margin-left: 70px;
+    width: 60px;
+    height: 60px;
+}
+.menu > .nickname{
+    position:relative;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    font-family: Amatic SC;
+}
+.menu > .filterfild{
+    position:relative;
+    margin-top: 20px;
+    width: calc(100% - 20px);
+    height: 70px;
+    margin-left: 10px;
+    font-size: 1.5rem;
+    color: white;
+    font-family: Amatic SC;
+}
+.menu > .filterfild > .text{
+    position: relative;
+    margin-right: 5px;
+    margin-top: 3px;
+    font-size: 1rem;
+    color: rgb(146, 143, 143);
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    resize: none;
+    width: calc(100% - 4px);
+    height: 20px;
+    border: none;
+    border-radius: 3px;
+}
+.menu > .filterfild > .fromTo{
+    font-size: 1.2rem;
+    text-align: left;
+}
+.menu > .filterfild > .fromTo > .data{
+    position: relative;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: rgb(146, 143, 143);
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    width: 75%;
+    resize: none;
+    height: 20px;
+    border: none;
+    border-radius: 3px;
+}
+.menu > .filterfild > .text:focus{outline:0}
+.menu > .filterfild > .data:focus{outline:0}
+.menu > .apply{
+    font-size: 1.3rem;
+    position:absolute;
+    right: calc(50% - 75px);
+    bottom: 100px;
+    width: 150px;
+    font-family: Amatic SC;
+    color: #B0B413;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+}
+.menu > .apply:focus{outline:0}
+.menu > .apply:active { background-color: rgb(245, 245, 245); }
+main{
+    position:absolute;
+    top:  105px;
+    left: 205px;
+    width: calc(100% - 205px);
+    height: calc(100% - 160px);
+    overflow: scroll;
+}
+main > .newPost
+{
+    position:relative;
+    border-radius: 5px;
+    width: 100%;
+    height: 150px;
+    background: rgba(176, 180, 19, 0.56);
+}
+.grUp{
+    font-size: 1rem;
+    position:absolute;
+    right: 25%;
+    bottom: 10px;
+    right: 10px;
+    font-family: Amatic SC;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.grRefresh{
+    display: none;
+    font-size: 1rem;
+    position:absolute;
+    bottom: 10px;
+    right: 10px;
+    font-family: Amatic SC;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.grUp:focus{outline:0}
+.grUp:active { background-color: rgb(245, 245, 245); }
+.grUpRefresh:focus{outline:0}
+.grUpRefresh:active { background-color: rgb(245, 245, 245); }
+main > .newPost > .text{
+    position:absolute;
+    left: 50px;
+    top: 45px;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    background-color: unset;
+    font-family: 'Times New Roman', Times, serif;
+    resize: none;
+    width: calc(100% - 80px) ;
+    height: 60px;
+    border: none;
+}
+main > .newPost > .teg:focus{outline:0}
+main > .newPost > .text:focus{outline:0}
+main > .newPost > .user{
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+}
+main > .newPost > .teg{
+    position:absolute;
+    right: 20px;
+    top: 10px;
+    width: calc(100% - 70px);
+    text-align: right;
+    height: 30px;
+    font-size: 1.5rem;
+    font-family: Amatic SC;
+    color: white;
+    background-color: unset;
+    resize: none;
+    border: none;
+}
+main > .newPost > .tegHelp{
+    z-index: 1;
+    position:absolute;
+    right: 20px;
+    visibility: hidden;
+    top: 45px;
+    width: 300px;
+    text-align: left;
+    height: 70px;
+    background-color: rgb(134, 204, 219, 80%);
+    border: none;
+    border-radius: 3px;
+    overflow: auto;
+}
+main > .newPost > .tegHelp > .selectedTeg{
+    text-align: left;
+    float: left;
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0;
+    font-size: 1rem;
+    font-family: Amatic SC;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    background-color: unset;
+}
+main > .newPost > .tegHelp > .selectedTeg:focus{outline:0}
+main > .newPost > .tegHelp > .selectedTeg:active { color: rgba(0, 0, 0, 0.56);}
+main > .newPost > .photoAddButton{
+    position:absolute;
+    left: 10px;
+    bottom: 10px;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    background-color: unset;
+    border-radius: 8px;
+    border: none;
+}
+main > .newPost > .photoAddButton img{
+    position:absolute;
+    width: 30px;
+    height: 30px;
+    top:0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+}
+main > .newPost > .photoAddButton:focus{outline:0}
+main > .newPost > .photoAddButton:active { background-color: rgba(176, 180, 19, 0.56);}
+main > .posts{
+    position: relative;
+    width: 100%;
+    overflow: scroll;
+}
+.ChangeBlock{
+    display: none;
+    position: absolute;
+    right: 40px;
+    top: 15%;
+    bottom: 15%;
+    height: 70%;
+    width: 70px;
+    background: #86CCDB;
+    border-radius: 5px;
+    z-index: 1;
+}
+.ChangeBlockEdit{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 25px;
+    font-size: 1.3rem;
+    font-family: Amatic SC;
+    color: white;
+    border: none;
+    background: none;
+}
+.ChangeBlockEdit:focus{outline:0}
+.ChangeBlockDelete{
+    position: absolute;
+    top: 30px;
+    right: 5px;
+    height: 25px;
+    background: none;
+    border: none;
+    font-family: Amatic SC;
+    color: white;
+    font-size: 1.3rem;
+}
+.ChangeBlockDelete:focus{outline:0}
+main > .posts >.post
+{
+    position: relative;
+    display: inline-block;
+    min-height: 100px;
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 100%;
+    background: rgba(134, 204, 219, 0.66);  
+}
+main > .posts >.post > .text{
+    position: relative;
+    display: inline-block;
+    width: calc(100% - 40px) ;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    margin-top: 40px;
+    font-size: 1rem;
+    color:  black;
+    font-family: 'Times New Roman', Times, serif;
+}
+main > .posts >.post > .photo > .archeo{
+    position: relative;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 5px;
+}
+main > .posts >.post > .photo{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+    width: calc(100% - 40px) ;
+}
+main > .posts >.post > .name{
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    font-size: 1.5rem;
+    color: white;
+    font-family: Amatic SC;
+}
+main > .posts >.post > .teg{
+    position:absolute;
+    right: 20px;
+    top: 10px;
+    padding: 0px;
+    font-size: 1.5rem;
+    font-family: Amatic SC;
+    color: #B0B413;
+    background-color: unset;
+    border: none;
+}
+main > .posts >.post > .teg:focus{outline:0}
+main > .posts >.post > .like{
+    position:absolute;
+    left: calc(50% - 25px);
+    bottom: 0px;
+    font-size: 1rem;
+    font-family: Amatic SC;
+    color: white;
+    background-color: unset;
+    border: none;
+}
+main > .posts >.post > .like:focus{outline:0}
+main > .posts >.post > .more{
+    position:absolute;
+    visibility: hidden;
+    right: 2px;
+    top: 45%;
+    width: 20px;
+    height: 20px;
+    background-color: unset;
+    border-radius: 5px;
+    border: none;
+}
+main > .posts >.post > .more img{
+    position:absolute;
+    width: 20px;
+    height: 20px;
+    top:0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    transition: transform 5s;
+}
+main > .posts >.post > .more:focus{outline:0}
+main > .posts >.post > .time{
+    position:absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 1rem;
+    color: white;
+    font-family: Amatic SC;
+}
+main > .posts> .seeMore{
+    position:relative;
+    margin-top: 0px;
+    font-size: 1rem;
+    width: 150px;
+    margin-left: calc(50% - 75px);
+    font-family: Amatic SC;
+    color: rgb(192, 192, 192);
+    background-color:unset;
+    border-radius: 5px;
+    border-width: 1px;
+}
+main > .posts> .seeMore:focus{outline:0}
+main > .posts> .seeMore:active { background-color: rgb(245, 245, 245); }
+@media (max-width: 900px) {
+    .menu {
+        display: none;
+    }
+    footer {
+        display: none;
+        width: 0px;
+        height: 0px;
+    }
+    header{
+        width: 100%;
+        left: 0px;
+        height: 75px;
+    }
+    header > .menuButton{
+        display: inline;
+    }
+    header .logo{
+        width: 75px;
+    }
+    header > .button2{
+        display: none;
+    }
+    header > .button1{
+        display: none;
+    }
+    header > .userHead{
+        display: inline;
+    }
+    header > .username{
+        display: inline;
+    }
+    main{
+        width: 100%;
+        left: 0px;
+        top: 80px;
+        height: calc(100% - 80px);
+    }
+    main > .posts >.post{
+        border-radius: 10px;
+    }
+    main > .posts >.post > .time{
+        right: 20px;
+        top: 15px;
+    }
+    main > .posts >.post > .teg{
+        left: 10px;
+        top: 35px;
+        text-align: left;
+        width: 100%;
+    }
+    main > .posts >.post > .text{
+        margin-top: 70px;
+    }
+    main > .newPost{
+        border-radius: 1px;
+    }
+    main > .newPost > .tegHelp{
+        width: 150px;
+    }
+    main > .seeMore{
+        margin-bottom: 5px;
+    }
+}
