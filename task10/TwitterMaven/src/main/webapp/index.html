@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/603dc29320.js" crossorigin="anonymous"></script>
+    <script src="resources/js/Lab7.js"></script>
+    <script src="resources/js/controller.js"></script>
+    <title>Elasmo</title>
+</head>
+
+<body>
+<form class="logInForm" name="logInForm" id="logInForm">
+    <input class="logInFormText" placeholder="Username" id="logInFormText"/>
+    <button class="logInFormOk" id="logInFormOk">Ok</button>
+    <button class="logInFormCancel" id="logInFormCancel">Cancel</button>
+</form>
+<div class="shade" id="shade"></div>
+    <header>
+        <img class="logo" src="resources/photos/1.png" alt="DINO">
+        <img class="userHead" src="resources/photos/userPhoto.png" alt="userPhoto">
+        <div class="username">Ales Kurch</div>
+        <button class="menuButton">Menu
+            <div class="line"></div>
+        </button>
+        <button class="button1" id="logIn">log in</button>
+        <button class="button2" id="logOut">log out</button>
+
+    </header>
+
+    <footer>
+        <div class="textFooter">
+            Elasmo by Alexey Kurch. 2 course 6 group
+            <br />e-mail: alexkurch100@gmai.com
+            <br />update: 29.02.2020
+        </div>
+    </footer>
+    <form class="menu" name="menu">
+        <img src="resources/photos/userPhoto.png" alt="userPhoto">
+        <div class="nickname" id="nickname"></div>
+        <div class="filterfild">Name:
+            <textarea class="text" placeholder="T-Rexh" name="name"></textarea>
+        </div>
+        <div class="filterfild">Teg:
+            <textarea class="text" placeholder="#tag" name="tag"></textarea>
+        </div>
+        <div class="filterfild">Date:
+            <div class="fromTo">
+                <input class="data" type="date" value="2001-09-10" name="dateFrom">&nbsp;:from
+                <input class="data" type="date" value="2001-09-10" name="dateTo">&nbsp;:to
+            </div>
+        </div>
+        <button type="submit" class="apply" name="apply">Apply</button>
+    </form>
+    <main>
+        <form class="newPost" name="addPost">
+            <img class="user" src="resources/photos/userPhoto.png" alt="userPhoto">
+            <textarea class="teg" placeholder="Type your teg" name="addTags"></textarea>
+            <div class="tegHelp">
+                <button class="selectedTeg">#elasmo_top</button>
+                <button class="selectedTeg">#hello</button>
+                <button class="selectedTeg">#Grrr</button>
+                <button class="selectedTeg">#girls_are_girls</button>
+            </div>
+            <textarea class="text" placeholder="Type your JurAction" name="addText"></textarea>
+            <button class="photoAddButton" type="button">
+                <img class="user" src="resources/photos/photoAdd.png" alt="userPhoto">
+            </button>
+            <button type="submit" class="grUp" name="grUp">Grrrr Up</button>
+            <button type="submit" class="grRefresh" name="grRefresh" id=' '>Grrrr Refresh</button>
+        </form>
+        <div class="posts" id="container">
+            <template id="template">
+                <div class="post" id=''>
+                    <div class="name" data-target="author"></div>
+                    <div class="teg" data-target="hashTags"></div>
+                    <div class="text" data-target="description"></div>
+                    <div class="time" data-target="createdAt"></div>
+                    <button class="more" id="moreButton">
+                        <img src="resources/photos/dots.png" alt="dots" class="moreImg">
+                    </button>
+                    <button class="like" id="like">grrrr it!</button>
+                    <div class="ChangeBlock" id="ChangeBlock">
+                        <button class="ChangeBlockEdit">Edit</button>
+                        <button class="ChangeBlockDelete">Delete</button>
+                    </div>
+                </div>
+            </template>
+            <button class="seeMore">See More</button>
+        </div>
+    </main>
+</body>
+
+</html>
