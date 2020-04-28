@@ -2,7 +2,7 @@ let posts = [
     {
         id: '1',
         description: 'text for 1',
-        createdAt: new Date('2020-03-17T23:00:00'),
+        createdAt: new Date(),
         author: 'Alex',
         photoLink: 'https://www.pressball.by/images/stories/2020/03/20200310231542.jpg',
         hashTags: [
@@ -15,7 +15,7 @@ let posts = [
     {
         id: '2',
         description: 'text for 2',
-        createdAt: new Date('2020-03-17T23:00:00'),
+        createdAt: new Date(),
         author: 'Snow',
         photoLink: 'https://www.pressball.by/images/stories/2020/03/20200310231542.jpg',
         hashTags: [
@@ -28,7 +28,7 @@ let posts = [
     {
         id: '3',
         description: 'text for 3',
-        createdAt: new Date('2020-03-17T23:00:00'),
+        createdAt: new Date(),
         author: 'Rose',
         photoLink: 'https://www.pressball.by/images/stories/2020/03/20200310231542.jpg',
         hashTags: [
@@ -40,7 +40,7 @@ let posts = [
     }, {
         id: '4',
         description: 'text for 4',
-        createdAt: new Date('2020-03-17T23:00:00'),
+        createdAt: new Date(),
         author: 'Kitty',
         photoLink: 'https://www.pressball.by/images/stories/2020/03/20200310231542.jpg',
         hashTags: [
@@ -52,7 +52,7 @@ let posts = [
     }, {
         id: '5',
         description: 'text for 5',
-        createdAt: new Date('2020-03-17T23:00:00'),
+        createdAt: new Date(),
         author: 'Alex',
         photoLink: 'https://www.pressball.by/images/stories/2020/03/20200310231542.jpg',
         hashTags: [
@@ -64,7 +64,7 @@ let posts = [
     }, {
         id: '6',
         description: 'text for 6',
-        createdAt: new Date('2020-03-17T23:00:00'),
+        createdAt: new Date(),
         author: 'Snow',
         photoLink: 'https://www.pressball.by/images/stories/2020/03/20200310231542.jpg',
         hashTags: [
@@ -76,7 +76,7 @@ let posts = [
     }, {
         id: '7',
         description: 'text for 7',
-        createdAt: new Date('2020-03-17T23:00:00'),
+        createdAt: new Date(),
         author: 'Rose',
         photoLink: 'https://www.pressball.by/images/stories/2020/03/20200310231542.jpg',
         hashTags: [
@@ -88,7 +88,7 @@ let posts = [
     }, {
         id: '8',
         description: 'text for 8',
-        createdAt: new Date('2020-03-17T23:00:00'),
+        createdAt: new Date(),
         author: 'Kitty',
         photoLink: 'https://www.pressball.by/images/stories/2020/03/20200310231542.jpg',
         hashTags: [
@@ -100,7 +100,7 @@ let posts = [
     }, {
         id: '9',
         description: 'text for 9',
-        createdAt: new Date('2020-03-17T23:00:00'),
+        createdAt: new Date(),
         author: 'Fione',
         photoLink: 'https://www.pressball.by/images/stories/2020/03/20200310231542.jpg',
         hashTags: [
@@ -112,7 +112,7 @@ let posts = [
     }, {
         id: '10',
         description: 'text for 10',
-        createdAt: new Date('2020-03-17T23:00:00'),
+        createdAt: new Date(),
         author: 'Alex',
         photoLink: 'https://www.pressball.by/images/stories/2020/03/20200310231542.jpg',
         hashTags: [
@@ -124,7 +124,7 @@ let posts = [
     }, {
         id: '11',
         description: 'text for 11',
-        createdAt: new Date('2020-03-17T23:00:00'),
+        createdAt: new Date(),
         author: 'Snow',
         photoLink: 'https://www.pressball.by/images/stories/2020/03/20200310231542.jpg',
         hashTags: [
@@ -136,7 +136,7 @@ let posts = [
     }, {
         id: '12',
         description: 'Roses are red violets -- are blue',
-        createdAt: new Date('2020-03-17T22:00:00'),
+        createdAt: new Date(),
         author: 'Rose',
         photoLink: 'https://www.pressball.by/images/stories/2020/03/20200310231542.jpg',
         hashTags: [
@@ -160,7 +160,7 @@ let posts = [
     }, {
         id: '14',
         description: 'text for 14',
-        createdAt: new Date('2020-03-17T23:00:00'),
+        createdAt: new Date(),
         author: 'Fiona',
         photoLink: 'https://www.pressball.by/images/stories/2020/03/20200310231542.jpg',
         hashTags: [
@@ -172,7 +172,7 @@ let posts = [
     }, {
         id: '15',
         description: 'text for 15',
-        createdAt: new Date('2020-03-17T23:00:00'),
+        createdAt: new Date(),
         author: 'Snow',
         photoLink: 'https://www.pressball.by/images/stories/2020/03/20200310231542.jpg',
         hashTags: [
@@ -185,7 +185,7 @@ let posts = [
     {
         id: '16',
         description: 'text for 16',
-        createdAt: new Date('2020-03-17T23:00:00'),
+        createdAt: new Date(),
         author: 'Sand',
         photoLink: 'https://www.pressball.by/images/stories/2020/03/20200310231542.jpg',
         hashTags: [
@@ -197,7 +197,7 @@ let posts = [
     }, {
         id: '17',
         description: 'text for 17',
-        createdAt: new Date('2020-03-17T23:00:00'),
+        createdAt: new Date(),
         author: 'Sea',
         photoLink: 'https://www.pressball.by/images/stories/2020/03/20200310231542.jpg',
         hashTags: [
@@ -209,7 +209,7 @@ let posts = [
     }, {
         id: '18',
         description: 'text for 18',
-        createdAt: new Date('2020-03-17T23:00:00'),
+        createdAt: new Date(),
         author: 'Alex',
         photoLink: 'https://www.pressball.by/images/stories/2020/03/20200310231542.jpg',
         hashTags: [
@@ -222,7 +222,7 @@ let posts = [
     {
         id: '19',
         description: 'text for 19',
-        createdAt: new Date('2020-03-17T23:00:00'),
+        createdAt: new Date(),
         author: 'Rose',
         photoLink: 'https://www.pressball.by/images/stories/2020/03/20200310231542.jpg',
         hashTags: [
@@ -234,7 +234,7 @@ let posts = [
     }, {
         id: '20',
         description: 'text for 20',
-        createdAt: new Date('2020-03-17T23:00:00'),
+        createdAt: new Date(),
         author: 'Fione',
         photoLink: 'https://www.pressball.by/images/stories/2020/03/20200310231542.jpg',
         hashTags: [
@@ -270,7 +270,7 @@ let module = (function () {
         if (!module.checkValid(post) || posts.find(value => value.id === post.id) !== undefined) {
             return false;
         }
-        post.createdAt = new Date('2020-03-17T23:00:00');
+        post.createdAt = new Date();
         post.id = post.createdAt.toString();
         post.author = "Me";
         posts.push(post);
@@ -298,29 +298,14 @@ let module = (function () {
     }
 
     function getPosts(skip, top, filterConfig) {
-        if (filterConfig !== null) {
-            if (filterConfig.author == null) {
-                if (filterConfig.tags == null)
-                    return posts.filter(p => (filterConfig.author == null) && (filterConfig.tags == null))
-                        .sort(a => a.createdAt).slice(skip, skip + top);
-                else {
-                    return posts.filter(p => (filterConfig.author == null) &&
-                        (filterConfig.tags.filter(tag => p.hashTags.includes(tag)).length === filterConfig.tags.length))
-                        .sort(a => a.createdAt).slice(skip, skip + top);
-                }
-            }
-            else {
-                if (filterConfig.tags == null)
-                    return posts.filter(p => (p.author === filterConfig.author) && (filterConfig.tags == null))
-                        .sort(a => a.createdAt).slice(skip, skip + top);
-                else {
-                    return posts.filter(p => (p.author === filterConfig.author) &&
-                        (filterConfig.tags.filter(tag => p.hashTags.includes(tag)).length === filterConfig.tags.length))
-                        .sort(a => a.createdAt).slice(skip, skip + top);
-                }
-            }
+        let postsFiltered=posts
+        if (filterConfig != null) {
+            if (filterConfig.author != null)
+                postsFiltered=posts.filter(p => p.author === filterConfig.author)
+            if(filterConfig.tags != null)
+           postsFiltered=postsFiltered.filter(p=>filterConfig.tags.filter(tag => p.hashTags.includes(tag)).length === filterConfig.tags.length)
         }
-        return posts.slice(skip, skip + top).sort(a => a.createdAt);
+        return postsFiltered.sort((a,b) => b.createdAt-a.createdAt).slice(skip, skip + top);
     }
 
     return {
@@ -332,7 +317,7 @@ let module = (function () {
         getPosts: getPosts
     }
 }());
-console.log(module.getPosts(0, 10, {author: 'Rose', tags: ['poetry']}));
+console.log(module.getPosts(0, 10, {tags: ['poetry']}));
 console.log(module.removePost('5'));
 console.log(module.editPost('3', {description: 'edited description'}));
 console.log(module.getPost('3'));
@@ -340,9 +325,8 @@ console.log(module.checkValid(module.getPost('3')));
 console.log(module.addPost({
     id: '1221',
     description: 'text for 2',
-    createdAt: new Date('2020-03-17T23:00:00'),
+    createdAt: new Date(),
     author: 'Snow',
     photoLink: 'https://www.pressball.by/images/stories/2020/03/20200310231542.jpg'
 }));
 console.log(module.addPost(module.getPost('7')));
-

@@ -86,10 +86,13 @@ class Module {
     }
 }
 class View {
-    me = 'Ales Kurch'
+    me = 'Hary Super Magic'
     template = document.getElementById('template');
     container = document.getElementById('container');
-
+    nickname=document.getElementById('nickname')
+    setNickName(){
+        this.nickname.textContent=this.me
+    }
     addItem(data) {
         let newNote = document.importNode(this.template.content, true);
         let placeholders = newNote.querySelectorAll('[data-target]');
@@ -154,6 +157,7 @@ let module
 window.onload = () => {
     view = new View()
     module = new Module()
+    view.setNickName()
 }
 function addPost(post) {
     if (module.add(post))
