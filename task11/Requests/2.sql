@@ -1,0 +1,1 @@
+SELECT * FROM twitter.POST WHERE USER_ID=11;
