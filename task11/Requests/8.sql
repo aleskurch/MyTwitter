@@ -1,0 +1,5 @@
+SELECT count(USER.USER_ID), USER.USER_ID, USER.NAME FROM 
+(SELECT USER_ID, CREATED_AT FROM 
+twitter.POST where Datediff(now(), CREATED_AT)=0) as FIRSTMARCH
+inner join twitter.USER on FIRSTMARCH.USER_ID=USER.USER_ID
+group by USER.USER_ID having count(USER.USER_ID)>3; 
